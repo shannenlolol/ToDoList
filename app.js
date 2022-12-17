@@ -6,6 +6,7 @@ const app = express();
 var items=[];
 
 app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, './Views'));
 
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(express.static("public"));
